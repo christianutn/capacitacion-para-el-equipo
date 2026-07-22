@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", /* Versión de JS de salida */
+    "module": "CommonJS", /* Node usa CommonJS por defecto */
+    "rootDir": "./src", /* Carpeta donde está tu código TS */
+    "outDir": "./dist", /* Carpeta donde se compilará el código JS */
+    "esModuleInterop": true, /* Mejora la compatibilidad de importaciones */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, /* Habilita validaciones estrictas (Zod y tipado seguro) */
+    "skipLibCheck": true, /* Acelera la compilación ignorando tipos de node_modules */
+    "experimentalDecorators": true, /* IMPORTANTE si decides usar sequelize-typescript */
+    "emitDecoratorMetadata": true, /* IMPORTANTE para inyección de dependencias o decoradores */
+    "types": ["jest", "node"]
+  },
+  "include": [
+    "src/**/*"
+  ], /* Archivos a compilar */
+  "exclude": [
+    "node_modules",
+    "tests"
+  ] /* Archivos a ignorar en build de prod */
+}
